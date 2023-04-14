@@ -30,7 +30,7 @@ class bluehome extends StatelessWidget {
                 width: 40,
                 height: 40,
                 child: Center(
-                  child: Container(
+                  child: SizedBox(
                     height: 30,
                     width: 30,
                     child: Image.asset(
@@ -40,7 +40,7 @@ class bluehome extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Center(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

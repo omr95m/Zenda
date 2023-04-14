@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class secondRow128 extends StatelessWidget {
   const secondRow128({super.key});
 
@@ -9,7 +10,7 @@ class secondRow128 extends StatelessWidget {
       children: [
         // ,
         Container(
-          margin: EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 10),
 
           // color: Colors.amber,
           child: Image.asset(
@@ -41,6 +42,9 @@ class secondRow128 extends StatelessWidget {
                 children: [
                   MaterialButton(
                     onPressed: () {},
+                    color: Colors.black,
+                    height: MediaQuery.of(context).size.height / 13,
+                    minWidth: 100,
                     child: const Text(
                       "shop",
                       style: TextStyle(
@@ -48,9 +52,6 @@ class secondRow128 extends StatelessWidget {
                           color: Colors.white,
                           fontFamily: "Avenir"),
                     ),
-                    color: Colors.black,
-                    height: MediaQuery.of(context).size.height / 13,
-                    minWidth: 100,
                   ),
                 ],
               ),

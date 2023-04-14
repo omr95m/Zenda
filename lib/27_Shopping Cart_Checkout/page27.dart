@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:zenda/27/secondRow.dart';
-import 'package:zenda/27/therdRoe.dart';
+import 'package:zenda/27_Shopping%20Cart_Checkout/secondRow.dart';
+import 'package:zenda/27_Shopping%20Cart_Checkout/therdRoe.dart';
+// import 'package:zenda/27/secondRow.dart';
+// import 'package:zenda/27/therdRoe.dart';
 
 import 'bluehome.dart';
 import 'firstRow.dart';
@@ -112,7 +114,7 @@ class page27 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Row(
@@ -174,14 +176,14 @@ class page27 extends StatelessWidget {
           padding: const EdgeInsets.only(top: 8),
           child: MaterialButton(
             onPressed: () {},
-            child: Text(
+            color: Colors.black,
+            height: 50,
+            minWidth: 30,
+            child: const Text(
               "PAYMENT",
               style: TextStyle(
                   fontSize: 15, color: Colors.white, fontFamily: "Avenir"),
             ),
-            color: Colors.black,
-            height: 50,
-            minWidth: 30,
           ),
         )
       ]),

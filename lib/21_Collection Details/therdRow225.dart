@@ -2,20 +2,21 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class firstRow350container extends StatelessWidget {
-  const firstRow350container({
-    super.key,
-  });
+class therdRow225 extends StatelessWidget {
+  const therdRow225({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return
+     Row(
       children: [
+        //,
         Container(
           margin: const EdgeInsets.only(top: 10),
+
           // color: Colors.amber,
           child: Image.asset(
-            'images/Copy7.png',
+            "images/Rectangle Copy 3.png",
             width: MediaQuery.of(context).size.width / 6,
             height: MediaQuery.of(context).size.height / 6,
             fit: BoxFit.fill,
@@ -26,8 +27,8 @@ class firstRow350container extends StatelessWidget {
         ),
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const Text(
-            "Houndstooth Side Zipper",
-            style: TextStyle(fontSize: 17, fontFamily: "Avenir"),
+            "Atelier Fuji NC Chair",
+            style: TextStyle(fontSize: 15, fontFamily: "Avenir"),
           ),
           Row(
             children: [
@@ -43,6 +44,9 @@ class firstRow350container extends StatelessWidget {
                 children: [
                   MaterialButton(
                     onPressed: () {},
+                    color: Colors.black,
+                    height: MediaQuery.of(context).size.height / 13,
+                    minWidth: 100,
                     child: const Text(
                       "shop",
                       style: TextStyle(
@@ -50,9 +54,6 @@ class firstRow350container extends StatelessWidget {
                           color: Colors.white,
                           fontFamily: "Avenir"),
                     ),
-                    color: Colors.black,
-                    height: MediaQuery.of(context).size.height / 13,
-                    minWidth: 100,
                   ),
                 ],
               ),

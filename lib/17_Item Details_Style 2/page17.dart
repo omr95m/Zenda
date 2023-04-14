@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
 // ignore: camel_case_types
 class page17 extends StatelessWidget {
@@ -10,8 +11,31 @@ class page17 extends StatelessWidget {
       body: ListView(children: [
         Column(
           children: [
-            Stack(children: [
-              Image.asset("images/Banner.png"),
+            Stack(clipBehavior: Clip.none, children: [
+              Container(
+                height: MediaQuery.of(context).size.height / 1.3,
+
+                // 345,
+                width: MediaQuery.of(context).size.width,
+                child: ImageSlideshow(
+                  indicatorColor: Colors.black,
+                  indicatorBackgroundColor: Colors.grey,
+                  children: [
+                    Image.asset(
+                      "images/un.jpg",
+                      fit: BoxFit.cover,
+                    ),
+                    Image.asset(
+                      "images/Banner.png",
+                      fit: BoxFit.cover,
+                    ),
+                    Image.asset(
+                      "images/Banner.png",
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              ),
               Positioned(
                 top: 20,
                 left: 15,

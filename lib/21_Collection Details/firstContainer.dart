@@ -31,7 +31,7 @@ class firstcontainer extends StatelessWidget {
           child: MaterialButton(
             onPressed: () {},
             child: Row(
-              children: [
+              children: const [
                 Text(
                   "SHOP NOW",
                   style: TextStyle(

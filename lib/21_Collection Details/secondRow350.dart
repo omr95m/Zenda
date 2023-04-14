@@ -1,5 +1,8 @@
+// ignore: file_names
+// ignore: file_names
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class scondRow350 extends StatelessWidget {
   const scondRow350({
     super.key,
@@ -10,7 +13,7 @@ class scondRow350 extends StatelessWidget {
     return Row(
       children: [
         Container(
-          margin: EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 10),
 
           // color: Colors.amber,
           child: Image.asset(
@@ -20,7 +23,7 @@ class scondRow350 extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 6,
         ),
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -28,9 +31,6 @@ class scondRow350 extends StatelessWidget {
             "Ovora Design Table Teak",
             style: TextStyle(fontSize: 15, fontFamily: "Avenir"),
           ),
-          // Container(
-          //   width: double.infinity,
-          //   child:
           Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -39,23 +39,24 @@ class scondRow350 extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 15, color: Colors.grey, fontFamily: "Avenir"),
               ),
-              const SizedBox(
-                width: 120,
+              Container(
+                color: Colors.amber,
+                width: MediaQuery.of(context).size.height / 3.8,
+                height: 30,
               ),
               MaterialButton(
                 onPressed: () {},
+                color: Colors.black,
+                height: MediaQuery.of(context).size.height / 13,
+                minWidth: 100,
                 child: const Text(
                   "shop",
                   style: TextStyle(
                       fontSize: 15, color: Colors.white, fontFamily: "Avenir"),
                 ),
-                color: Colors.black,
-                height: MediaQuery.of(context).size.height / 13,
-                minWidth: 100,
               ),
             ],
           ),
-          // ),
         ]),
       ],
     );

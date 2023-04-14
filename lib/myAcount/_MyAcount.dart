@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 // ignore: camel_case_types
 class myAcount extends StatelessWidget {
@@ -53,30 +51,27 @@ class myAcount extends StatelessWidget {
                         const SizedBox(
                           width: 10,
                         ),
-                        Container(
-                          // color: Colors.amber,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                // mainAxisAlignment: MainAxisAlignment.end,
-                                children: const [
-                                  Text(
-                                    "Garrett Miller",
-                                    style: TextStyle(
-                                        fontSize: 17, fontFamily: "Avenir"),
-                                  )
-                                ],
-                              ),
-                              const Text(
-                                "samir.runte@newell.org",
-                                style: TextStyle(
-                                    fontSize: 15,
-                                    color: Colors.grey,
-                                    fontFamily: "Avenir"),
-                              ),
-                            ],
-                          ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              // mainAxisAlignment: MainAxisAlignment.end,
+                              children: const [
+                                Text(
+                                  "Garrett Miller",
+                                  style: TextStyle(
+                                      fontSize: 17, fontFamily: "Avenir"),
+                                )
+                              ],
+                            ),
+                            const Text(
+                              "samir.runte@newell.org",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.grey,
+                                  fontFamily: "Avenir"),
+                            ),
+                          ],
                         )
                       ],
                     ),

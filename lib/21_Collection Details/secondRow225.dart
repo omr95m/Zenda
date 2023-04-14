@@ -1,7 +1,10 @@
+// ignore: file_names
+// ignore: file_names
 import 'package:flutter/material.dart';
 
-class firstRow128 extends StatelessWidget {
-  const firstRow128({super.key});
+// ignore: camel_case_types
+class secondRow225 extends StatelessWidget {
+  const secondRow225({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,11 +12,11 @@ class firstRow128 extends StatelessWidget {
       children: [
         // ,
         Container(
-          margin: EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 10),
 
           // color: Colors.amber,
           child: Image.asset(
-            "images/Rectangle Copy 4.png",
+            "images/Rectangle Copy 2.png",
             width: MediaQuery.of(context).size.width / 6,
             height: MediaQuery.of(context).size.height / 6,
             fit: BoxFit.fill,
@@ -24,7 +27,7 @@ class firstRow128 extends StatelessWidget {
         ),
         Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const Text(
-            "Ceiling light",
+            "Jane Lauren Rhombus",
             style: TextStyle(fontSize: 15, fontFamily: "Avenir"),
           ),
           Row(
@@ -41,6 +44,9 @@ class firstRow128 extends StatelessWidget {
                 children: [
                   MaterialButton(
                     onPressed: () {},
+                    color: Colors.black,
+                    height: MediaQuery.of(context).size.height / 13,
+                    minWidth: 100,
                     child: const Text(
                       "shop",
                       style: TextStyle(
@@ -48,9 +54,6 @@ class firstRow128 extends StatelessWidget {
                           color: Colors.white,
                           fontFamily: "Avenir"),
                     ),
-                    color: Colors.black,
-                    height: MediaQuery.of(context).size.height / 13,
-                    minWidth: 100,
                   ),
                 ],
               ),

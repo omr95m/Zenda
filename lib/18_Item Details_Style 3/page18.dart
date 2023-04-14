@@ -1,6 +1,6 @@
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
-import 'package:zenda/18/tabbarColumn.dart';
+import 'package:zenda/18_Item%20Details_Style%203/tabbarColumn.dart';
 
 // ignore: camel_case_types
 class page18 extends StatefulWidget {
@@ -10,6 +10,7 @@ class page18 extends StatefulWidget {
   State<page18> createState() => _page18State();
 }
 
+// ignore: camel_case_types
 class _page18State extends State<page18> {
   @override
   Widget build(BuildContext context) {
@@ -126,7 +127,7 @@ class _page18State extends State<page18> {
                     children: [
                       MaterialButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "ADD TO CART",
                           style: TextStyle(
                               fontSize: 15,
