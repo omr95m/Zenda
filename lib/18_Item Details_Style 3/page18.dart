@@ -127,6 +127,9 @@ class _page18State extends State<page18> {
                     children: [
                       MaterialButton(
                         onPressed: () {},
+                        color: Colors.black,
+                        height: 50,
+                        minWidth: 300,
                         child: const Text(
                           "ADD TO CART",
                           style: TextStyle(
@@ -134,9 +137,6 @@ class _page18State extends State<page18> {
                               color: Colors.white,
                               fontFamily: "Avenir"),
                         ),
-                        color: Colors.black,
-                        height: 50,
-                        minWidth: 300,
                       ),
                       const SizedBox(
                         width: 5,

@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '17_Item Details_Style 2/page17.dart';
 import '21_Collection Details/page21.dart';
+import '28_Menu/page28.dart';
 import 'myAcount/_MyAcount.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: page21(),
+      home: page28(),
       debugShowCheckedModeBanner: false,
     );
   }

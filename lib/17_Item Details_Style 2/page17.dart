@@ -12,7 +12,7 @@ class page17 extends StatelessWidget {
         Column(
           children: [
             Stack(clipBehavior: Clip.none, children: [
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height / 1.3,
 
                 // 345,
@@ -127,14 +127,14 @@ class page17 extends StatelessWidget {
                   top: 8, left: 10, right: 10, bottom: 30),
               child: MaterialButton(
                 onPressed: () {},
+                color: Colors.black,
+                height: 50,
+                minWidth: 300,
                 child: const Text(
                   "ADD TO CART",
                   style: TextStyle(
                       fontSize: 15, color: Colors.white, fontFamily: "Avenir"),
                 ),
-                color: Colors.black,
-                height: 50,
-                minWidth: 300,
               ),
             )
           ],
