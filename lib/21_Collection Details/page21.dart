@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zenda/21_Collection%20Details/secondRow128.dart';
-import 'package:zenda/21_Collection%20Details/secondRow225.dart';
-import 'package:zenda/21_Collection%20Details/secondRow350.dart';
-import 'package:zenda/21_Collection%20Details/therdRow128.dart';
-import 'package:zenda/21_Collection%20Details/therdRow225.dart';
-import 'package:zenda/21_Collection%20Details/therdRow350.dart';
-// import 'package:zenda/21/secondRow128.dart';
+
 // import 'package:zenda/21/secondRow225.dart';
 // import 'package:zenda/21/secondRow350.dart';
 // import 'package:zenda/21/therdRow128.dart';
@@ -13,11 +7,8 @@ import 'package:zenda/21_Collection%20Details/therdRow350.dart';
 // import 'package:zenda/21/therdRow350.dart';
 
 import 'firstContainer.dart';
-import 'firstRow128.dart';
-import 'firstRow225.dart';
-import 'firstRow350.dart';
 
-// ignore: camel_case_types
+// ignore: camel_case_types, must_be_immutable
 class page21 extends StatelessWidget {
   List prodacts = [
     {
@@ -61,415 +52,240 @@ class page21 extends StatelessWidget {
               ListView.builder(
                   itemCount: prodacts.length,
                   itemBuilder: (context, i) {
-                    return Container(
-                      height: 600,
-                      width: 370,
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                "${prodacts[i]['typ']}",
-                                style: const TextStyle(
-                                    fontSize: 20, fontFamily: "Avenir"),
-                              ),
-                              Expanded(child: Container()),
-                              MaterialButton(
-                                onPressed: () {},
-                                child: Row(
-                                  children: const [
-                                    Text(
-                                      "Show all",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.black,
-                                          fontFamily: "Avenir"),
-                                    ),
-                                    Icon(
-                                      Icons.arrow_right,
-                                      color: Colors.black,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            height: 4,
-                          ),
-                          Row(
-                            children: [
-                              //,
-                              Container(
-                                margin: const EdgeInsets.only(top: 10),
-
-                                // color: Colors.amber,
-                                child: Image.asset(
-                                  '${prodacts[i]['image1']}',
-                                  width: MediaQuery.of(context).size.width / 6,
-                                  height:
-                                      MediaQuery.of(context).size.height / 6,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "${prodacts[i]['name1']}",
-                                      style: const TextStyle(
-                                          fontSize: 15, fontFamily: "Avenir"),
-                                    ),
-                                    Row(
-                                      children: [
-                                        const Text(
-                                          "\$29.00",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              color: Colors.grey,
-                                              fontFamily: "Avenir"),
-                                        ),
-                                        Container(
-                                          color: Colors.amber,
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              3.8,
-                                          height: 30,
-                                        ),
-                                        MaterialButton(
-                                          onPressed: () {},
-                                          color: Colors.black,
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              13,
-                                          minWidth: 100,
-                                          child: const Text(
-                                            "shop",
-                                            style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.white,
-                                                fontFamily: "Avenir"),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ]),
-                            ],
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 90, top: 7),
-                            child: Divider(
-                              color: Colors.grey,
-                              thickness: 1,
+                    return Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              "${prodacts[i]['typ']}",
+                              style: const TextStyle(
+                                  fontSize: 20, fontFamily: "Avenir"),
                             ),
-                          ),
-                          Row(
-                            children: [
-                              //,
-                              Container(
-                                margin: const EdgeInsets.only(top: 10),
-
-                                // color: Colors.amber,
-                                child: Image.asset(
-                                  '${prodacts[i]['image2']}',
-                                  width: MediaQuery.of(context).size.width / 6,
-                                  height:
-                                      MediaQuery.of(context).size.height / 6,
-                                  fit: BoxFit.fill,
-                                ),
+                            Expanded(child: Container()),
+                            MaterialButton(
+                              onPressed: () {},
+                              child: Row(
+                                children: const [
+                                  Text(
+                                    "Show all",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        color: Colors.black,
+                                        fontFamily: "Avenir"),
+                                  ),
+                                  Icon(
+                                    Icons.arrow_right,
+                                    color: Colors.black,
+                                  ),
+                                ],
                               ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "${prodacts[i]['name2']}",
-                                      style: const TextStyle(
-                                          fontSize: 15, fontFamily: "Avenir"),
-                                    ),
-                                    Row(
-                                      children: [
-                                        const Text(
-                                          "\$29.00",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              color: Colors.grey,
-                                              fontFamily: "Avenir"),
-                                        ),
-                                        Container(
-                                          color: Colors.amber,
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              3.8,
-                                          height: 30,
-                                        ),
-                                        MaterialButton(
-                                          onPressed: () {},
-                                          color: Colors.black,
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              13,
-                                          minWidth: 100,
-                                          child: const Text(
-                                            "shop",
-                                            style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.white,
-                                                fontFamily: "Avenir"),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ]),
-                            ],
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 90, top: 7),
-                            child: Divider(
-                              color: Colors.grey,
-                              thickness: 1,
                             ),
-                          ),
-                          Row(
-                            children: [
-                              //,
-                              Container(
-                                margin: const EdgeInsets.only(top: 10),
-                                child: Image.asset(
-                                  '${prodacts[i]['image3']}',
-                                  width: MediaQuery.of(context).size.width / 6,
-                                  height:
-                                      MediaQuery.of(context).size.height / 6,
-                                  fit: BoxFit.fill,
-                                ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 4,
+                        ),
+                        Row(
+                          children: [
+                            //,
+                            Container(
+                              margin: const EdgeInsets.only(top: 10),
+
+                              // color: Colors.amber,
+                              child: Image.asset(
+                                '${prodacts[i]['image1']}',
+                                width: MediaQuery.of(context).size.width / 6,
+                                height: MediaQuery.of(context).size.height / 6,
+                                fit: BoxFit.fill,
                               ),
-                              const SizedBox(
-                                width: 6,
-                              ),
-                              Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "${prodacts[i]['name3']}",
-                                      style: const TextStyle(
-                                          fontSize: 15, fontFamily: "Avenir"),
-                                    ),
-                                    Row(
-                                      children: [
-                                        const Text(
-                                          "\$29.00",
+                            ),
+                            const SizedBox(
+                              width: 6,
+                            ),
+                            Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "${prodacts[i]['name1']}",
+                                    style: const TextStyle(
+                                        fontSize: 15, fontFamily: "Avenir"),
+                                  ),
+                                  Row(
+                                    children: [
+                                      const Text(
+                                        "\$29.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            color: Colors.grey,
+                                            fontFamily: "Avenir"),
+                                      ),
+                                      Container(
+                                        color: Colors.amber,
+                                        width:
+                                            MediaQuery.of(context).size.height /
+                                                3.8,
+                                        height: 30,
+                                      ),
+                                      MaterialButton(
+                                        onPressed: () {},
+                                        color: Colors.black,
+                                        height:
+                                            MediaQuery.of(context).size.height /
+                                                13,
+                                        minWidth: 100,
+                                        child: const Text(
+                                          "shop",
                                           style: TextStyle(
                                               fontSize: 15,
-                                              color: Colors.grey,
+                                              color: Colors.white,
                                               fontFamily: "Avenir"),
                                         ),
-                                        Container(
-                                          color: Colors.amber,
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              3.8,
-                                          height: 30,
-                                        ),
-                                        MaterialButton(
-                                          onPressed: () {},
-                                          color: Colors.black,
-                                          height: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
-                                              13,
-                                          minWidth: 100,
-                                          child: const Text(
-                                            "shop",
-                                            style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.white,
-                                                fontFamily: "Avenir"),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ]),
-                            ],
+                                      ),
+                                    ],
+                                  ),
+                                ]),
+                          ],
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 90, top: 7),
+                          child: Divider(
+                            color: Colors.grey,
+                            thickness: 1,
                           ),
-                        ],
-                      ),
+                        ),
+                        Row(
+                          children: [
+                            //,
+                            Container(
+                              margin: const EdgeInsets.only(top: 10),
+
+                              // color: Colors.amber,
+                              child: Image.asset(
+                                '${prodacts[i]['image2']}',
+                                width: MediaQuery.of(context).size.width / 6,
+                                height: MediaQuery.of(context).size.height / 6,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 6,
+                            ),
+                            Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "${prodacts[i]['name2']}",
+                                    style: const TextStyle(
+                                        fontSize: 15, fontFamily: "Avenir"),
+                                  ),
+                                  Row(
+                                    children: [
+                                      const Text(
+                                        "\$29.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            color: Colors.grey,
+                                            fontFamily: "Avenir"),
+                                      ),
+                                      Container(
+                                        color: Colors.amber,
+                                        width:
+                                            MediaQuery.of(context).size.height /
+                                                3.8,
+                                        height: 30,
+                                      ),
+                                      MaterialButton(
+                                        onPressed: () {},
+                                        color: Colors.black,
+                                        height:
+                                            MediaQuery.of(context).size.height /
+                                                13,
+                                        minWidth: 100,
+                                        child: const Text(
+                                          "shop",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              color: Colors.white,
+                                              fontFamily: "Avenir"),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ]),
+                          ],
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 90, top: 7),
+                          child: Divider(
+                            color: Colors.grey,
+                            thickness: 1,
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            //,
+                            Container(
+                              margin: const EdgeInsets.only(top: 10),
+                              child: Image.asset(
+                                '${prodacts[i]['image3']}',
+                                width: MediaQuery.of(context).size.width / 6,
+                                height: MediaQuery.of(context).size.height / 6,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 6,
+                            ),
+                            Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "${prodacts[i]['name3']}",
+                                    style: const TextStyle(
+                                        fontSize: 15, fontFamily: "Avenir"),
+                                  ),
+                                  Row(
+                                    children: [
+                                      const Text(
+                                        "\$29.00",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            color: Colors.grey,
+                                            fontFamily: "Avenir"),
+                                      ),
+                                      Container(
+                                        color: Colors.amber,
+                                        width:
+                                            MediaQuery.of(context).size.height /
+                                                3.8,
+                                        height: 30,
+                                      ),
+                                      MaterialButton(
+                                        onPressed: () {},
+                                        color: Colors.black,
+                                        height:
+                                            MediaQuery.of(context).size.height /
+                                                13,
+                                        minWidth: 100,
+                                        child: const Text(
+                                          "shop",
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              color: Colors.white,
+                                              fontFamily: "Avenir"),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ]),
+                          ],
+                        ),
+                      ],
                     );
                   }),
-                  const SizedBox(height: 7,)
-
-              // Padding(
-              //   padding: const EdgeInsets.only(left: 15, top: 15),
-              //   child: Column(
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           const Text(
-              //             "Chairs (350)",
-              //             style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-              //           ),
-              //           Expanded(child: Container()),
-              //           MaterialButton(
-              //             onPressed: () {},
-              //             child: Row(
-              //               children: const [
-              //                 Text(
-              //                   "Show all",
-              //                   style: TextStyle(
-              //                       fontSize: 15,
-              //                       color: Colors.black,
-              //                       fontFamily: "Avenir"),
-              //                 ),
-              //                 Icon(
-              //                   Icons.arrow_right,
-              //                   color: Colors.black,
-              //                 ),
-              //               ],
-              //             ),
-              //           ),
-              //         ],
-              //       ),
-              //       const firstRow350container(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const scondRow350(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const therdRow350(),
-              //     ],
-              //   ),
-              // ),
-              // Padding(
-              //   padding: const EdgeInsets.only(
-              //     top: 30,
-              //     left: 15,
-              //   ),
-              //   child: Column(
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           const Text(
-              //             "Lamps (128)",
-              //             style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-              //           ),
-              //           Expanded(child: Container()),
-              //           MaterialButton(
-              //             onPressed: () {},
-              //             child: Row(
-              //               children: const [
-              //                 Text(
-              //                   "Show all",
-              //                   style: TextStyle(
-              //                       fontSize: 15,
-              //                       color: Colors.black,
-              //                       fontFamily: "Avenir"),
-              //                 ),
-              //                 Icon(
-              //                   Icons.arrow_right,
-              //                   color: Colors.black,
-              //                 ),
-              //               ],
-              //             ),
-              //           ),
-              //         ],
-              //       ),
-              //       const firstRow128(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const secondRow128(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const therdRow128(),
-              //     ],
-              //   ),
-              // ),
-              // Padding(
-              //   padding: const EdgeInsets.only(
-              //     top: 30,
-              //     left: 15,
-              //     bottom: 7,
-              //   ),
-              //   child: Column(
-              //     crossAxisAlignment: CrossAxisAlignment.start,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           const Text(
-              //             "Tables (225)",
-              //             style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-              //           ),
-              //           Expanded(child: Container()),
-              //           MaterialButton(
-              //             onPressed: () {},
-              //             child: Row(
-              //               children: const [
-              //                 Text(
-              //                   "Show all",
-              //                   style: TextStyle(
-              //                       fontSize: 15,
-              //                       color: Colors.black,
-              //                       fontFamily: "Avenir"),
-              //                 ),
-              //                 Icon(
-              //                   Icons.arrow_right,
-              //                   color: Colors.black,
-              //                 ),
-              //               ],
-              //             ),
-              //           ),
-              //         ],
-              //       ),
-              //       const firstRow225(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const secondRow225(),
-              //       const Padding(
-              //         padding: EdgeInsets.only(left: 90, top: 7),
-              //         child: Divider(
-              //           color: Colors.grey,
-              //           thickness: 1,
-              //         ),
-              //       ),
-              //       const therdRow225(),
-              //     ],
-              //   ),
-              // ),
+              const SizedBox(
+                height: 7,
+              )
             ],
           )
         ],

@@ -1,8 +1,25 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
+// ignore: camel_case_types, must_be_immutable
 class page28 extends StatelessWidget {
-  const page28({super.key});
+  List images = [
+    "images/_Icons - 21 Home.png",
+    "images/Crown.png",
+    "images/Bookmark_2.png",
+    "images/Tag.png",
+    "images/Bell.png",
+    "images/Settings.png",
+  ];
+  List menu = [
+    "Home",
+    "New collections",
+    "Editor's Picks",
+    "Top Deals",
+    "Notifications",
+    "Settings",
+  ];
+
+  page28({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,117 +75,39 @@ class page28 extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/_Icons - 21 Home.png",
-                  width: 17,
-                  height: 20,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "Home",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
+            ListView.builder(
+                itemCount: 6,
+                itemBuilder: (context, i) {
+                  return Column(
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            // "images/_Icons - 21 Home.png",
+                            images[i],
+
+                            width: 17,
+                            height: 20,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            menu[i],
+                            style: const TextStyle(
+                                fontSize: 20, fontFamily: "Avenir"),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 17,
+                      )
+                    ],
+                  );
+                }),
             const SizedBox(
-              height: 17,
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/Crown.png",
-                  width: 20,
-                  height: 15,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "New collections",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 22,
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/Bookmark_2.png",
-                  width: 13.06,
-                  height: 19.59,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "Editor's Picks",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 22,
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/Tag.png",
-                  width: 17,
-                  height: 20,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "Top Deals",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 22,
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/Bell.png",
-                  width: 17,
-                  height: 19.58,
-                ),
-                const SizedBox(
-                  width: 15.95,
-                ),
-                const Text(
-                  "Notifications",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 22,
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  "images/Settings.png",
-                  width: 18.18,
-                  height: 19.22,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                const Text(
-                  "Settings",
-                  style: TextStyle(fontSize: 20, fontFamily: "Avenir"),
-                ),
-              ],
-            ),
+              height: 40,
+            )
           ],
         ),
       ),
