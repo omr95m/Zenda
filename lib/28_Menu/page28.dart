@@ -77,6 +77,8 @@ class page28 extends StatelessWidget {
             ),
             ListView.builder(
                 itemCount: 6,
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, i) {
                   return Column(
                     children: [

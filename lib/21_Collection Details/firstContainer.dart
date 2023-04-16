@@ -15,7 +15,7 @@ class firstcontainer extends StatelessWidget {
       children: [
         Image.asset(
           "images/Extra 2.png",
-          // fit: BoxFit.fill,
+          // fit: BoxFit.cover,
         ),
         const Positioned(
           top: 20,
